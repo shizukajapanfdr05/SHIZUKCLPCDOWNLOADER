@@ -1,0 +1,231 @@
+version,showVersion,date,content,patch
+真正版本,显示版本号,更新日期,内容模板,
+1.13.3684007,1.13.0,2025/5/21,"## Search Logic Optimization
+1. Restructured search result sorting logic to enhance search accuracy. 
+2. Reduced search respond time for quicker results. 
+3. Now supports AI-powered search feature.
+
+## New Playable Controller
+1. Added a new playable controller asset to editor. playable controller component can be added to scene objects. 
+2. Playable controller can be used to edit entities' lifetime motion. Currently, three types of motions are supported: path-based movement, projectile movement, and frame-based self-movement.
+
+## Script Update
+1. Nows supports global compilation that ensures better integrity, error detection, reference management, and more efficient scripting.
+2. In the current version, the use of break and continue keywords outside for loops will trigger a warning. It will result in breaking changes in the next version, please revise in time.
+3. In the current version, declaring return values in asynchronous functions will trigger a warning. It will result in breaking changes in the next version, please revise in time.
+4. In the current version, passing an out var as the actual parameter when a function's formal parameter is declared as a value type will trigger a warning. It will result in breaking changes in the next version, please revise in time.
+
+## Physics Engine Update
+1. Optimized the preview for physics collisions. 
+2. Allows Rigidbody parameters locking (x/y/z position, x/y/z rotation). The locked values will not change in physics simulation. 
+3. Optimized character controller. 
+4. Improved logic for event triggers.
+
+## Skybox Updates
+1. Added two new Skybox types: custom shader Skybox and procedurally generated Skybox. Some parameters are adjustable. 
+2. Create texture, apply the corresponding shader, and assign them to Skybox for to take effect.
+
+## Other Optimizations
+1. Added Skeleton Part Controller block that allows users to set the orientation of any bone node in a model on the client. 
+2. Added Custom Event Manager for managing custom events and script-defined events. 
+3. Added a Parkour and Free-for-all (FFA) gameplay template. Tutorials are available at the official site. 
+4. Asset Store in Craftland Studio now supports publishing in selected platform(s). Users can upload to Craftland, Craftland Studio, or both. 
+5. Added a new camera object and the corresponding API. It is designed for use as a client object and offers enhanced responsiveness.",
+1.14.3838421,1.14.0,2025/7/30,"## Animation Editor Update
+1. Animation Editor Optimization: now supports full preview and updates Playhead position in real-time, with frame jumping unlocked.
+2. Parameter adjustments: ""Loop"" has been renamed to ""Wrap Mode"" with a new ""None"" option and gap-filling settings.
+3. Transition Optimization: ""Blend Fade Length"" now features slashes to indicate transition duration. Short edge alignment is clearer. Maintains compatibility with old-version animation clips.
+
+## Script Update
+1. Now supports jump logic defined in FCC.
+2. Script-breaking change: The logical  ""AND"" operator (&&) now has higher precedence over the logical ""OR"" operator (||). Previously, they had the same precedence.
+3. Script-breaking change: When the value on the left is an enum type, the value on the right cannot be nil.
+4. Script-breaking change: The from keyword is no longer reserved.
+
+## Particle Emitter Update
+1. Added two new particle orientation settings.
+2. Curves can be set to control how the particles' size, speed, and acceleration changes over time.
+
+## New Performance Editor
+1. The beta version of the Performance Editor is here! Added a Timeline Editor window to facilitate the management and editing of Timeline assets.
+2. Improved processes for asset creation, property settings, and track operations for smoother user experience.
+3. Improved preview feature that now supports real-time preview and multi-track interactive editing.
+4. A variety of track types and convenient actions are provided to help developers create complex scenes with ease.
+
+## Other Optimizations
+1. Added Interpolation feature to Craftland Studio. The client will automatically smooth position and rotation properties to improve frame rate and smoothness. Parameters for the interpolation feature can be adjusted in the settings.
+2. Leaderboard has been fully upgraded. The data storage module now supports multi-column data tables.
+3. When exporting a scene, if a merged node is detected to have a number of child nodes exceeding the threshold, it will automatically split into multiple merge nodes. This ensures that the exported data structure complies with the engine constraints and avoids rendering omissions.
+",
+1.14.3847898,1.14.1,2025-8-8,"1. Added FCG script for AI code prompt files, which can be deployed to VS Code or the Cursor editor.
+2. Optimized the copy-paste interaction logic in the hierarchy list.
+3. Assets can now refresh automatically after you add files locally.",
+1.15.3997714,1.15.0,2025/10/29,"## New NPCs
+1. Added new mini characters. Edit their outfits or models with the appearance editor.
+2. Added three new textures to edit custom characters' skins, outfits, and hair.
+
+## Custom Store Update
+1. Custom store listings now supports quick duplication.
+2. The interactions for adding custom empty items and bundles have been improved.
+
+## Component Manager Update
+1.  Added a new filter to the component manager to show components with scripts or custom properties.
+2. Components now support attachable scripts and custom property indicators displayed in both the Component Manager and Property Panel.
+3. Localization-related custom properties are now editable.
+
+## Script Update
+1. Added prompt files for users to quickly setup GitHub Copilot, Cursor and other AI coding tools.
+
+## Performance Editor Update
+1. Added Switch Camera Track to switch client camera angles and connect multiple camera clips with seamless transition.
+2. Added Camera (Actor) track that controls camera position, rotation, and Field of View (FOV). Preview is available without entering debug mode.
+3. Added Audio Track: play BGM, SFX and dialogue with multiple loop modes (once, loop, and no changes) and adjustable playback speed.
+4. Added Event Track that sends custom events at specific times to trigger scene behavior or effects.
+5. Added Animation Track that controls NPC animation with loop and playback-speed options.
+6. Other features: Skybox Track and Along Path Subtrack.
+
+## Other Optimizations
+1. Added three new scene maps: Kalahari, NeXTerra, and Solara.
+2. Pop-up tools in the editor now auto-saves, and proportional scaling is added for objects.
+3. Creators can now bind voice responses to a Persona in the Persona Center.
+4. Added 50 new AI-generated animation resources and 82 sound effects including BGM, in-match and interaction sound effects, and more.
+5. Added global search feature for searching resources in the entire project.
+6. Added new limitation for Scale: Scale value cannot be negative. If negative, the value will be auto-set to 0.00001.
+7. Added Data Board feature in Creator Center that displays a variety of map data.",
+1.15.4008519,1.15.1,2025/11/6,"1. Performance Editor: Added keyboard shortcuts for common actions. Preview and recording mode can now be exited more easily.
+2. Scripting: When hovering over a function, the tip will now include descriptions of return values.
+3. UI Editor: Drag texture/image assets directly onto the canvas to create an image widget.",
+1.15.4049104,1.15.3,2025/12/3,"1. Join our Discord community via the link in the bottom-left corner of the project management interface.
+2. The editor now supports 5 new languages.
+3. When importing FBX files, you can now choose whether to export the tangent information.
+4. Improved the drag-and-drop experience for files in the project interface.",
+1.16.4170774,1.16.0,2026/1/14,"## Data Storage Function Update
+1. Added support for local data storage.
+2. The data storage write API has been changed to a blocking API.
+3. Introduced a write protection API, which resolves the overwriting issue when multiple game sessions attempt to write to the same key.
+4. Creator Center's Data Center now supports scheduled data table clearing and deletion of specific keys.
+
+## Publish Process Update
+1. To prevent duplicate creation and uploads, and to reduce management overhead, each local project can now only be bound to and uploaded as a single online project.
+2. Introduced a new short code feature. New or updated maps will now automatically be assigned a short code, simplifying map sharing for creators. The original, longer map code will remain functional.
+3. Added a new Gameplay Type option. Selecting the appropriate gameplay type will help us recommend maps to users who are more likely to enjoy them.
+4. The Creator Center now supports configuring multilingual information via CSV files when publishing.
+
+## Player Data Update
+1. Player data now supports previewing prefab types.
+2. Added custom hitboxes, allowing you to add hitboxes to bones, bind them to specific hitbox regions, and edit their properties.
+
+## Global Search Update
+1. The Global Search window now supports finding file references.
+2. Optimized search result sorting logic and added support for searching additional asset types.
+
+## Animation Editor Update
+1. The Animation Editor now supports previewing prefabs.
+2. Optimized the Animation Editor's interactive experience.
+
+## Other Optimizations
+1. Added the old Bermuda map with classic areas like old Peak and Rim Nam Village making a return. Come explore them!
+2. New API support allows players to form teams/factions to enter new Craftland maps.
+3. Improved player movement when Player Character Controller is enabled, especially in situations like slopes and stairs.
+4. While increasing the FBX-related polygon count limit, new limits have been introduced for the total FBX model polygon count and total collision mesh polygon count within a scene.
+5. The Appearance Editor now features a Mutually Exclusive Group preview interface, allowing for convenient management and previewing of these groups.
+6. A new game content translation feature has been added. UI text within maps published by creators will now be automatically translated into the player's chosen language.
+7. Added a new script mapping feature for custom managers, including custom events, custom components, and custom enumerations.
+8. Zombies can now have breakable limbs. When active, dealing damage can destroy zombie body parts.",
+1.16.4179668,1.16.1,2026/1/22,"1. Fixed some of the known bugs.
+2. Optimized some of the details for a better experience.",
+1.17.4326539,1.17.0,2026/4/8,"## Script Update
+1. Function pointers are now available for use.
+2. Relevant FCCs will automatically be imported when you copy and paste, and then save your code.
+3. Now supports quick import for custom FCCs.
+4. All TYPE-related APIs have been changed to ID-based, removing the need for additional ""as"" casting.
+
+## Performance Monitoring Update
+Static map performance monitoring is now supported. You can now optimize your map's performance based on detected data and provided tips.
+
+## Other Optimizations
+1. Added new mini character models resources for Wukong, Orion, and Primis.
+2. When editing the scene, you can now press F + Right-click to enter Orbit View for easier object inspection.
+3. Added a new vehicle: horse.
+4. In the event frame of the Timeline event track, the custom event's receiver now supports selection of the event's actor entity; Entity type supports the selection of the event's entity and actor entity.
+5. Improved UI display: Widgets' hover and selected states are now unified.
+6. Added particle size over time and particle angular velocity over time curves.",
+1.17.4335043,1.17.1,2026/4/16,"1. Added a resolution switching feature in the UI editor to quickly preview different screen resolutions. 
+2. Added a Block Recommendation feature. Tap an empty block slot to check a list of recommended blocks available for use.
+3. Optimized the camera focus logic for scene objects. The adjusted focus angle is now more user-friendly.
+4. Optimized the auto-naming rules for quick asset registration.",
+1.17.4368367,1.17.2,2026/5/14,"1. Added a new general data storage primitive, consolidating the previously scattered data storage primitives into a unified entry point. 
+2. Officially launched the offline mode template, allowing creation, editing, and publishing of offline content. 
+3. Optimized file naming rules by relaxing and refining naming restrictions for different scenarios.",
+1.19.4646566,1.19.0,2026/9/16,"## Editor x AI
+1. The editor now features fully integrated AI capabilities, enabling conversational interaction with AI Smith, the built-in AI assistant. MCP extensions  are also supported, providing more efficient and controllable workflows for creation, execution, and management.
+2. MCP Server capabilities integrated into the editor, supporting Blocks, Scripts, Scenes, UI, Animation Controllers, and more. MCP Server URL can be obtained within the editor for flexible workflow extension. 
+3. AI Smith: supports multiple conversation management, execution-process tracking, and step-by-step execution, making AI operations clearer and more convenient.
+4. Added tool permission management and login state management to help creators use AI tools more safely and smoothly.
+
+## Preset Character System Update
+1. Preset Character System v2.0 is live! Experience updated configuration processes for preset characters and character data, and new configuration methods for character animations.
+2. Now supports character type selection and gender match settings. You can also configure separate character data files for different genders.
+
+## Custom Animation Update
+1. Enhanced animation configuration flexibility. You can now modify Free Fire characters' controls through custom animation controllers, with optimized animation resource replacement and bone hierarchy blending logic.
+2. You can now quickly generate animation controllers from templates, then preview and edit animation states for customization.
+3. Supports playing multiple states simultaneously, with each state overriding others based on the track status.
+4. Added APIs for pausing playback, resuming playback, and resetting playback progress.
+
+## Asset Store Update
+1. Package exporting and resource publishing now automatically detect and include referenced dependency resources, with prompts displayed when any dependencies are missing.
+2. Resource publishing supports setting access codes, and restricted resources require access code verification before they can be obtained.
+3. The Asset Store now supports shareable asset links, allowing users to navigate directly to the corresponding asset in Craftland Studio.
+
+## Camera System Update
+1. Camera configuration supports more consistent performance across offline template preview, editor playtest, and post-publish. 
+2. Creators can debug camera scale preview via scroll wheel mapping on PC. 
+3. Added runtime APIs related to camera sensitivity and camera shake, and optimized camera transition performance.
+
+## Script Update
+1. The script debugger now supports expanding and inspecting 2D lists and arrays. 
+2. Step debugging for conditional branches has been improved. Step Over can now follow the branch that is actually executed.
+3. The script language service can now locate the built-in FCC based on the project configuration, improving the stability of code navigation and symbol resolution.
+
+## Scene Editor Update
+1. Overlapping objects now support continuous tapping to cycle through and switch between selections.
+2. Added Shift operation tips for easier multi-select and box selection.
+3. Improved the lock/unlock functionality for multiple selected objects, as well as batch Prefab detachment.
+4. After a package is imported, assets that require registration are now registered automatically.
+
+## Particle Emitter Update
+1. Added sprite sheet animation to Particle Editor, with playback options based on particle lifecycle or a fixed frame rate.
+2. Particle size and size over lifetime can now be adjusted independently along each axis. 
+3. Added support for emitting particles in the direction of the emitter's surface normal.
+
+## Behavior Tree Editor Update
+1. Behavior Tree Editor now supports quickly deleting node input connections. Connections can also be dragged to empty areas to disconnect them.
+2. Added basic node templates for General Action, General Condition, Move, and Idle.
+3. Configured nodes can now be saved as templates and dragged into the project for reuse.
+
+## UI Editor Update
+1. UI Widget Joystick now supports move, press, and release callbacks, along with joystick-direction mapping configuration in the Input System.
+2. Added UI Grid, including grid snapping and editing settings, to improve layout efficiency and precision.
+3. Updated the text-content localization logic.
+4. Added the UI Easy Scroll Layout control, enabling faster creation of scrolling interfaces such as inventories and lists. It supports configurable scroll direction, child-item arrangement, cell size and spacing, drag effects, scrollbars, and clipping effects.
+5. Added support for using UI Prefabs as list-item templates, along with item-selection and item-reuse features to streamline the creation of complex interfaces and improve runtime performance.
+
+## API Update
+1. Added a Distance Visibility component that automatically fades, hides, or scales objects based on their distance from the camera or player.
+2. Added UI click detection and support for retrieving the actual positions of UI controls.
+3. The numeric system supports large-number operations, scientific notation, and additional formatting methods.
+4. Table data can now be accessed by column name or key.
+5. Emotes now support client-side playback and pausing.
+6. Added a high-performance, reusable scrolling list component.
+7. Added support for configuring player rotation speed for different stances.
+8. Improved movement, jumping, and stance-related events in Player CCT mode.
+9. Added player information, including camera sensitivity, character appearance ID, and actual movement speed.
+10. Craftland Studio now supports APIs for creating chat windows and handling chat message events. Chat features can also be debugged directly in the Editor.
+
+## Other Optimizations
+1. Scene text objects now support outline, shadow, and gradient effects to improve readability in complex scenes. Horizontal and vertical text alignment, as well as line-spacing can now be adjusted to format scene titles, billboards, and mission prompts easily.
+2. Map publishing now supports a pre-publish feature. Creators can create a test version for review and manually publish it as the official version once approved.
+3. The Chat component now supports chat emotes and quick messages, using either Free Fire's default content or creator-configured options.
+4. Players can now copy or report chat messages, further enhancing the chat experience in Craftland maps.
+5. The Collection Module now includes an in-match wardrobe feature. Creators can configure the outfits displayed in the wardrobe and customize when and where players can access it. APIs have also been added for wardrobe opening and closing, outfit selection, equipment confirmation, and resource download status.",

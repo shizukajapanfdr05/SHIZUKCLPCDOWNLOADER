@@ -1,0 +1,14 @@
+version: 1.19.4689915
+files:
+  - url: 1.19.4689915/CraftlandStudio_Web_Setup_1.19.4689915.exe
+    sha512: e2p4VJwSmDBO7nsYtcCS5dfsY4s+8iBo5cCnRWrkBbdZ7V4thjqy/GF7ubDDFjkKhLyozE7h0/n3fA7NdYKXRw==
+path: CraftlandStudio_Web_Setup_1.19.4689915.exe
+sha512: e2p4VJwSmDBO7nsYtcCS5dfsY4s+8iBo5cCnRWrkBbdZ7V4thjqy/GF7ubDDFjkKhLyozE7h0/n3fA7NdYKXRw==
+packages:
+  x64:
+    size: 2442732081
+    sha512: acjWL4VBjJ2kYsYtjl6sENtue0acnWulz+gEuECggTQcwx0GiYYRrJbsMq+BfuZc+dG/ygSNgvnhAhkzpearCw==
+    blockMapSize: 2426631
+    path: 1.19.4689915/FE-1.19.4689915-x64.nsis.7z
+    file: FE-1.19.4689915-x64.nsis.7z
+releaseDate: '2026-10-22T04:02:06.972Z'

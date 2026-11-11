@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #f8faff;
+  --rainbow-gradient: linear-gradient(135deg, #ff6b6b 0%, #ffa502 20%, #2ed573 40%, #1e90ff 60%, #9b59b6 80%, #ff4757 100%);
+  --rainbow-pastel: linear-gradient(120deg, rgba(255, 182, 193, 0.45), rgba(255, 218, 185, 0.45), rgba(254, 255, 179, 0.45), rgba(186, 255, 201, 0.45), rgba(186, 225, 255, 0.45), rgba(224, 187, 228, 0.45));
+  --rainbow-border: linear-gradient(135deg, rgba(255, 107, 107, 0.4), rgba(255, 179, 71, 0.4), rgba(46, 213, 115, 0.4), rgba(30, 144, 255, 0.4), rgba(155, 89, 182, 0.4));
+  --rainbow-shimmer: linear-gradient(90deg, #ff4e50, #f9d423, #2ed573, #00c9ff, #9b59b6, #ff4e50);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1e293b;
+  background-color: #f8faff;
+  background-image: 
+    radial-gradient(1200px 700px at 15% -10%, rgba(255, 154, 162, 0.22), transparent 60%),
+    radial-gradient(1000px 600px at 85% 15%, rgba(186, 225, 255, 0.28), transparent 55%),
+    radial-gradient(800px 500px at 50% 50%, rgba(255, 255, 186, 0.22), transparent 50%),
+    radial-gradient(900px 600px at 20% 85%, rgba(186, 255, 201, 0.22), transparent 55%),
+    radial-gradient(1100px 700px at 90% 90%, rgba(224, 187, 228, 0.25), transparent 60%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Rainbow animated text */
+.rainbow-text {
+  background: var(--rainbow-shimmer);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow-flow 8s linear infinite;
+}
+
+@keyframes rainbow-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glassmorphism cards with rainbow borders */
+.rainbow-glass {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  box-shadow: 
+    0 1px 0 rgba(255, 255, 255, 0.8) inset,
+    0 10px 30px -10px rgba(100, 116, 139, 0.12),
+    0 20px 40px -15px rgba(155, 89, 182, 0.08);
+  position: relative;
+}
+
+.rainbow-glass-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.rainbow-glass-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.4), rgba(255, 179, 71, 0.35), rgba(46, 213, 115, 0.35), rgba(30, 144, 255, 0.4), rgba(155, 89, 182, 0.4));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Rainbow button styling */
+.rainbow-btn {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ffa502 25%, #2ed573 50%, #1e90ff 75%, #9b59b6 100%);
+  background-size: 200% 200%;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 8px 24px -6px rgba(30, 144, 255, 0.4), 0 4px 12px -3px rgba(255, 107, 107, 0.3);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: rainbow-flow 6s ease infinite;
+}
+
+.rainbow-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -6px rgba(30, 144, 255, 0.55), 0 6px 16px -3px rgba(255, 107, 107, 0.45);
+}
+
+/* YouTube creator button styling */
+.yt-creator-btn {
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 50%, #990000 100%);
+  color: #ffffff;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px -2px rgba(255, 0, 0, 0.35);
+}
+
+.yt-creator-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px -2px rgba(255, 0, 0, 0.5);
+}
+
+/* Subtle badge styles */
+.badge-rainbow-sky {
+  background: rgba(30, 144, 255, 0.12);
+  color: #0284c7;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.badge-rainbow-emerald {
+  background: rgba(46, 213, 115, 0.12);
+  color: #15803d;
+  border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+.badge-rainbow-amber {
+  background: rgba(255, 165, 2, 0.12);
+  color: #b45309;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.badge-rainbow-purple {
+  background: rgba(155, 89, 182, 0.12);
+  color: #7e22ce;
+  border: 1px solid rgba(192, 132, 252, 0.3);
+}
+
+/* Animation utilities */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.85; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.03); }
+}
+
+.pulse-glow {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}

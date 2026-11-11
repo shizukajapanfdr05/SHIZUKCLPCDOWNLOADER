@@ -1,0 +1,6 @@
+{
+  "name": "Craftland Studio — PC Release Hub & Downloads",
+  "description": "Desktop build releases for Craftland map editor PC, featuring independent high-availability Garena API, direct downloads, and light rainbow design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
